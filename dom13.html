@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <h1> JS addEventListener</h1>
+    <p> passing parameter valure when using addEventListener</p>
+    <button id="myBut">click me!</button>
+    <p id="demo"></p>
+    <script>
+        let p1=3;
+        let p2=4;
+        document.getElementById("myBut").addEventListener("click",func);
+        function func(){
+            myfunction(p1,p2);
+        }
+        function myfunction(a,b){
+            document.getElementById("demo").innerHTML=a*b;
+        }
+    </script>
+</body>
+</html>

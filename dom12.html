@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js addEventListener</h1>
+    <p>we can use addEventListener to add two events at the same time</p>
+    <button id="myBut">Click me!</button>
+    <p id="demo"></p>
+    <script>
+        var x=document.getElementById("myBut");
+        x.addEventListener("click",myFunc);
+        x.addEventListener("click",otherFunc);
+        function myFunc(){
+            alert("hello world!");
+            
+        }
+        function otherFunc(){
+            alert("this is also executed");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js functions</h1>
+    <p>js functions are executed in a way they are called</p>
+    <p id="demo"></p>
+    <script>
+        function mydisplayer(some){
+            document.getElementById("demo").innerHTML=some;
+        }
+        function myFirst(){
+            mydisplayer("Hello");
+        }
+        function mySecond(){
+            mydisplayer("goodbye");
+        }
+        //myFirst();
+        mySecond();
+        myFirst();
+    </script>
+</body>
+
+</html>
